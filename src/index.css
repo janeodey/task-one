@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+}
+
+/* ----- VARIABLES ----- */
+:root{
+    --LIGHTCOLOR: #fff;
+    --DARKCOLOR: #000;
+}
+
+.bodyName{
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5rem;
+    min-height: 100vh;
+    background-color: var(--LIGHTCOLOR);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ----- HEADER ----- */
+header{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-left: auto;
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding-right: 50px;
+}
+
+header .share{
+    background-image: url(./images/share.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    padding-right: 600px;
+}
+
+.profile_section{
+    text-align: center;
+}
+.profile_section #profile_img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.profile_section #twitter{
+    margin-top: 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 30px;
+    color: #101828;
+
+}
+
+/* ----- CONTENT ----- */
+.links{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    padding: 10px;
+}
+ul{
+    list-style-type: none;
+    min-width: 600px;
+}
+li{
+    background: #EAECF0;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: var(--DARKCOLOR);
+    font-size: 1rem;
+}
+
+/* ----- LINKS ----- */
+.slack{
+    text-align: center;
+}
+.fa-slack, .fa-github, .fa-share{
+    font-size: 25px;
+    padding: 0 10px 0 10px;
+}
+
+/* ----- FOOTER ----- */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    padding: 20px 30px;
+    position: absolute;
+    bottom: 0;
+    background: -var(--LIGHTCOLOR);
+    border-top: 3px solid rgb(226, 223, 223);
+    width: 100%;
+}
+
+.ingression_logo{
+  margin-top: -35px;
+  z-index: -10;
+}
+
+/* ----- MEDIA QUERY ----- */
+@media screen and (max-width:568px){
+    ul{
+        min-width: 0
+    }
+    footer, .slack{
+        display: none;
+    }
+    li{
+        background: #EAECF0;
+        border: 1px solid #EAECF0;
+        border-radius: 8px;
+        margin-top: 10px;
+        padding: 20px;
+    }
+    header .share{
+        background-image: url(./images/dots.png);
+        width: 50px;
+        height: 50px;
+        padding-right: 150px;
+    }
+}
+
