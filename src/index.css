@@ -73,7 +73,6 @@ header .share{
     text-align: center;
     justify-content: center;
     height: auto;
-    padding: 10px;
 }
 ul{
     list-style-type: none;
@@ -84,17 +83,23 @@ li{
     border: 1px solid #EAECF0;
     border-radius: 8px;
     margin-top: 10px;
-    padding: 10px;
+    padding: 12px;
 }
 a{
     text-decoration: none;
     color: var(--DARKCOLOR);
-    font-size: 1rem;
+    font-size: 1.2rem;
+
+}
+.links li:hover{
+    box-shadow: 3px 2px 6px #ced2da;
+    cursor: pointer;
 }
 
 /* ----- LINKS ----- */
 .slack{
     text-align: center;
+    margin-top: 10px;
 }
 .fa-slack, .fa-github, .fa-share{
     font-size: 25px;
@@ -121,7 +126,7 @@ footer{
 }
 
 /* ----- MEDIA QUERY ----- */
-@media screen and (max-width:568px){
+@media screen and (max-width:760px){
     ul{
         min-width: 0
     }
